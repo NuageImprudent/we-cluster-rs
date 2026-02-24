@@ -5,7 +5,6 @@
 
 use we_cluster_rs::{convert_to_2d, convert_to_3d};
 use rand::{Rng, SeedableRng};
-use std::f64::consts::PI;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("UMAP High-Dimensional Data Example");

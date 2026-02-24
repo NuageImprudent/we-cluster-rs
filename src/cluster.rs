@@ -399,7 +399,7 @@ fn dot(a: &[f32], b: &[f32]) -> f32 {
     a.iter().zip_eq(b.iter()).map(|(x, y)| x * y).sum()
 }
 
-pub fn cluster(embeddings: &Array2<f32>, max_speakers: Option<usize>) -> Result<Vec<usize>, Box<dyn std::error::Error + Send + Sync>> {
+pub fn cluster(embeddings: &Array2<f32>, max_speakers: Option<usize>) -> Result<Vec<usize>> {
     let n = embeddings.len_of(Axis(0));
     if n == 0 {
         return Ok(vec![]);
