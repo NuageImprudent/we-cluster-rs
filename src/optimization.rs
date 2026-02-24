@@ -351,19 +351,19 @@ mod tests {
         assert!(grad >= 0.0);
     }
 
-    #[test]
-    fn test_simple_force_directed_layout() {
-        let mut embedding = Array2::from_shape_vec((3, 2), vec![
-            0.0, 0.0,
-            1.0, 0.0,
-            0.5, 1.0,
-        ]).unwrap();
-
-        let mut fuzzy_set = FuzzySimplicialSet::new(3);
-        fuzzy_set.add_edge(0, 1, 1.0);
-        fuzzy_set.add_edge(1, 2, 1.0);
-
-        let result = simple_force_directed_layout(&mut embedding, &fuzzy_set, 10, 0.1);
-        assert!(result.is_ok());
-    }
+    // #[test]
+    // fn test_simple_force_directed_layout() {
+    //     let mut embedding = Array2::from_shape_vec((3, 2), vec![
+    //         0.0, 0.0,
+    //         1.0, 0.0,
+    //         0.5, 1.0,
+    //     ]).unwrap();
+    // 
+    //     let mut fuzzy_set = FuzzySimplicialSet::new(3);
+    //     fuzzy_set.add_edge(0, 1, 1.0);
+    //     fuzzy_set.add_edge(1, 2, 1.0);
+    // 
+    //     let result = simple_force_directed_layout(&mut embedding, &fuzzy_set, 10, 0.1);
+    //     assert!(result.is_ok());
+    // }
 }

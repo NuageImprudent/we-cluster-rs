@@ -1,16 +1,15 @@
 [package]
-name = "rag-umap"
-version = "0.0.0"
+name = "we-cluster-rs"
+version = "0.0.1"
 edition = "2024"
-authors = ["Richard Anaya"]
+authors = ["NuageImprudent"]
 license = "MIT"
-description = "A simple Rust implementation of UMAP for dimensionality reduction"
-repository = "https://github.com/richardanaya/rag-umap"
+description = "A simple Rust implementation of we speaker clusterization"
+repository = "https://github.com/NuageImprudent/we-cluster-rs"
 
 [dependencies]
 ndarray = "0.15"
 rand = "0.8"
-nalgebra = "0.32"
-rayon = "1.8"
 thiserror = "1.0"
-num-traits = "0.2"
+hdbscan = "0.12"
+itertools = "0.14.0"
