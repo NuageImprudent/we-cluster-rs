@@ -8,7 +8,7 @@ description = "A simple Rust implementation of we speaker clusterization"
 repository = "https://github.com/NuageImprudent/we-cluster-rs"
 
 [dependencies]
-ndarray = "0.15"
+ndarray = "0.16.1"
 rand = "0.8"
 thiserror = "1.0"
 hdbscan = "0.12"
