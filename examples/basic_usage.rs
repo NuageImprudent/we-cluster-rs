@@ -3,7 +3,7 @@
 //! This example demonstrates how to use the simple convert_to_2d function
 //! for dimensionality reduction on synthetic data.
 
-use rag_umap::{convert_to_2d, convert_to_3d};
+use we_cluster_rs::{convert_to_2d, convert_to_3d};
 use std::f64::consts::PI;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {

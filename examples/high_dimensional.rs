@@ -3,7 +3,7 @@
 //! This example demonstrates the simple convert functions on high-dimensional data,
 //! which is one of UMAP's primary use cases.
 
-use rag_umap::{convert_to_2d, convert_to_3d};
+use we_cluster_rs::{convert_to_2d, convert_to_3d};
 use rand::{Rng, SeedableRng};
 use std::f64::consts::PI;
 
